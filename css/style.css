@@ -4,6 +4,9 @@ Primary Color (Orange): #F26724;
 Secondary Color (Grey): #939598;
 Text Color (Black): #2A2A2A;
 */
+img {
+  width: 100%;
+}
 body {
   background-color: #ffffff;
   font-family: "Nunito+Sans", sans-serif;
