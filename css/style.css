@@ -49,7 +49,7 @@ a {
 a:visited {
   color: #ac42da;
 }
-a:hover {
+a:hover a:focus {
   color: #939598;
   text-decoration: none;
 }
