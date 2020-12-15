@@ -41,3 +41,18 @@ li {
   font-size: 18px;
   font-weight: 400;
 }
+
+a {
+  color: #f26724;
+  text-decoration: none;
+}
+a:visited {
+  color: #ac42da;
+}
+a:hover {
+  color: #939598;
+  text-decoration: none;
+}
+a:active {
+  color: #2a2a2a;
+}
