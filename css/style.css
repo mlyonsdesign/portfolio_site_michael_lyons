@@ -49,10 +49,14 @@ a {
 a:visited {
   color: #ac42da;
 }
-a:hover a:focus {
+a:hover {
   color: #939598;
   text-decoration: none;
 }
 a:active {
   color: #2a2a2a;
+}
+a:focus {
+  color: #939598;
+  text-decoration: none;
 }
