@@ -82,11 +82,19 @@ a:focus {
   color: #2a2a2a;
 }
 .button:active {
-  background-color: #2a2a2a;
+  background-color: #939598;
   color: #ffffff;
+  border-bottom: 2px solid #939598;
+  border-top: 2px solid #939598;
+  border-right: 2px solid #939598;
+  border-left: 2px solid #939598;
 }
 
 .button:focus {
-  background-color: #2a2a2a;
+  background-color: #939598;
   color: #ffffff;
+  border-bottom: 2px solid #939598;
+  border-top: 2px solid #939598;
+  border-right: 2px solid #939598;
+  border-left: 2px solid #939598;
 }
