@@ -76,3 +76,8 @@ a:focus {
   transition: 0.2s opacity;
   text-transform: uppercase;
 }
+
+.button:hover {
+  background-color: #f26724;
+  color: #2a2a2a;
+}
