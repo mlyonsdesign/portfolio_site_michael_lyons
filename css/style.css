@@ -81,3 +81,12 @@ a:focus {
   background-color: #f26724;
   color: #2a2a2a;
 }
+.button:active {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.button:focus {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
