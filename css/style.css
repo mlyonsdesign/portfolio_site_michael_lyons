@@ -110,6 +110,7 @@ a:focus {
   border-right: 2px solid #f26724;
   border-left: 2px solid #f26724;
   transition: 0.2s opacity;
+  text-transform: none;
 }
 
 .button.contact:hover {
