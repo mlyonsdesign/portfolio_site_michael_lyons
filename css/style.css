@@ -4,8 +4,9 @@ Primary Color (Orange): #F26724;
 Secondary Color (Grey): #939598;
 Text Color (Black): #2A2A2A;
 */
-img {
-  width: 100%;
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -16,6 +17,11 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #2a2a2a;
 }
+
+img {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
