@@ -184,3 +184,10 @@ nav > ul {
 nav > ul > li {
   display: inline-block;
 }
+
+nav > ul > li > a {
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #f26724;
+}
