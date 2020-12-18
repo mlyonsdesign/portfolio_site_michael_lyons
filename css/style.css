@@ -165,3 +165,7 @@ a:focus {
   display: table;
   margin: 0 auto;
 }
+
+.logo {
+  max-width: 250px;
+}
