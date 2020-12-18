@@ -156,3 +156,7 @@ a:focus {
   padding-bottom: 25px;
   border-bottom: 1px solid #939598;
 }
+
+#hero h1 {
+  text-align: center;
+}
