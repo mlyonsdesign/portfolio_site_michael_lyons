@@ -160,3 +160,8 @@ a:focus {
 #hero h1 {
   text-align: center;
 }
+
+#hero span {
+  display: table;
+  margin: 0 auto;
+}
