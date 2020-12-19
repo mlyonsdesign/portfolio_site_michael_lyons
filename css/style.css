@@ -53,9 +53,7 @@ a {
   color: #f26724;
   text-decoration: none;
 }
-a:visited {
-  color: #ac42da;
-}
+
 a:hover {
   color: #939598;
   text-decoration: none;
@@ -181,14 +179,10 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 8px;
+  padding: 0 12px;
   text-transform: uppercase;
   font-weight: 400;
   color: #f26724;
-}
-
-nav > ul > li > a:visited {
-  color: #ac42da;
 }
 
 nav > ul > li > a:hover {
