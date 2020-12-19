@@ -2,6 +2,7 @@
 Colors used:
 Primary Color (Orange): #F26724;
 Secondary Color (Grey): #939598;
+Secondary Color (Light Grey): #CCCCCC;
 Text Color (Black): #2A2A2A;
 */
 
@@ -15,7 +16,7 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #2a2a2a;
+  color: #939598;
 }
 
 img {
@@ -182,19 +183,19 @@ nav > ul > li > a {
   padding: 0 12px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #f26724;
+  color: #cccccc;
 }
 
 nav > ul > li > a:hover {
-  color: #2a2a2a;
+  color: #f26724;
 }
 
 nav > ul > li > a:active {
-  color: #939598;
+  color: #2a2a2a;
 }
 
 nav > ul > li > a:focus {
-  color: #939598;
+  color: #2a2a2a;
 }
 
 nav {
