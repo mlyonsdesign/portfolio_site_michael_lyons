@@ -202,3 +202,10 @@ nav {
   width: 100%;
   display: inline-block;
 }
+
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
