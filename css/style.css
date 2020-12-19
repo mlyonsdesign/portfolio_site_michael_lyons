@@ -209,3 +209,9 @@ nav {
   display: inline-block;
   width: 100%;
 }
+
+#aboutme h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
