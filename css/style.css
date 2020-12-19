@@ -207,3 +207,8 @@ nav > ul > li > a:active {
 nav > ul > li > a:focus {
   color: #939598;
 }
+
+nav {
+  width: 100%;
+  display: inline-block;
+}
