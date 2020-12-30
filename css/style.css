@@ -221,6 +221,12 @@ nav {
     text-align: unset;
     padding: 20px 0 13px;
   }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
