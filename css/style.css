@@ -222,6 +222,10 @@ nav {
     padding: 20px 0 13px;
   }
 
+  .logo {
+    float: left;
+  }
+
   nav {
     width: auto;
     float: right;
