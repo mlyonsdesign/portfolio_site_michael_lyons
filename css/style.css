@@ -239,6 +239,10 @@ nav {
   body {
     font-size: 18px;
   }
+
+  span {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
