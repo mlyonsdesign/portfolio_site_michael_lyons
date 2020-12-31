@@ -243,6 +243,10 @@ nav {
   span {
     display: block;
   }
+
+  .col-md-6 {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
