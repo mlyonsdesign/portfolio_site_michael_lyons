@@ -250,6 +250,7 @@ nav {
 
   [class*="col-"] {
     float: left;
+    padding: 0 10px;
   }
 
   .row::after {
