@@ -240,6 +240,10 @@ nav {
     font-size: 18px;
   }
 
+  h2 {
+    text-align: center;
+  }
+
   span {
     display: block;
   }
@@ -257,6 +261,10 @@ nav {
     content: "";
     clear: both;
     display: table;
+  }
+
+  #contact {
+    text-align: center;
   }
 }
 
