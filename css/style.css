@@ -287,10 +287,7 @@ nav {
 
   .col-lg-5 {
     width: 41.66%;
-  }
-
-  .col-lg-5 {
-    width: 41.66%;
+    padding-left: 40px;
   }
 
   .container {
