@@ -248,6 +248,10 @@ nav {
     display: block;
   }
 
+  .col-lg-5 {
+    width: 100%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -279,17 +283,6 @@ nav {
 
   .col-lg-5 {
     width: 41.66%;
-  }
-
-  [class*="col-"] {
-    float: left;
-    padding: 0 10px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
   }
 
   .container {
