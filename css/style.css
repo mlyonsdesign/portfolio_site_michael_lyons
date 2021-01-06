@@ -78,14 +78,16 @@ a:focus {
   border-top: 2px solid #f26724;
   border-right: 2px solid #f26724;
   border-left: 2px solid #f26724;
-  transition: 0.2s opacity;
   text-transform: uppercase;
+  transition: 0.2s color;
+  transition: 0.2s background-color;
 }
 
 .button:hover {
   background-color: #f26724;
   color: #ffffff;
 }
+
 .button:active {
   background-color: #939598;
   color: #ffffff;
@@ -114,8 +116,9 @@ a:focus {
   border-top: 2px solid #f26724;
   border-right: 2px solid #f26724;
   border-left: 2px solid #f26724;
-  transition: 0.2s opacity;
   text-transform: none;
+  transition: 0.2s color;
+  transition: 0.2s background-color;
 }
 
 .button.contact:hover {
