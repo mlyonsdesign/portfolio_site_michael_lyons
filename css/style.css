@@ -232,7 +232,7 @@ nav {
 }
 
 .sun {
-  animation: 4s color-change infinite alternate linear;
+  animation: 6s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
