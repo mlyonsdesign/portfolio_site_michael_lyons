@@ -53,6 +53,7 @@ li {
 a {
   color: #f26724;
   text-decoration: none;
+  transition: 0.2s color;
 }
 
 a:hover {
