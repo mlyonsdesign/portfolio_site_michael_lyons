@@ -257,6 +257,10 @@ nav {
   }
 }
 
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
