@@ -219,6 +219,15 @@ nav {
   text-align: center;
 }
 
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
