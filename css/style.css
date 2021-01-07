@@ -235,6 +235,15 @@ nav {
   animation: 4s color-change infinite alternate linear;
 }
 
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
