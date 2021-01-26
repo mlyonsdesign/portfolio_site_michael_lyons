@@ -205,11 +205,6 @@ nav > ul > li > a:focus {
   color: #2a2a2a;
 }
 
-nav {
-  width: 100%;
-  display: inline-block;
-}
-
 #hero {
   background-color: #ffffff;
   padding: 20px 0;
@@ -328,6 +323,11 @@ nav {
 @media only screen and (min-width: 641px) {
   .logo {
     max-width: 250px;
+  }
+
+  nav {
+    width: 100%;
+    display: inline-block;
   }
 }
 
