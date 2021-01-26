@@ -218,6 +218,10 @@ nav > ul > li > a:focus {
   text-align: center;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
