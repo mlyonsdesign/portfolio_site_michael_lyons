@@ -169,7 +169,7 @@ a:hover {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 header {
@@ -323,6 +323,12 @@ nav {
 
   #aboutmike h3 {
     margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .logo {
+    max-width: 250px;
   }
 }
 
