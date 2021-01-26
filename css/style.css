@@ -222,6 +222,11 @@ nav > ul > li > a:focus {
   display: none;
 }
 
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
