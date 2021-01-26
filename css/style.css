@@ -326,7 +326,6 @@ nav > ul > li > a:focus {
   }
 
   nav {
-    width: 100%;
     display: inline-block;
   }
 }
