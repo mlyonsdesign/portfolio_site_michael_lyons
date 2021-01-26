@@ -232,6 +232,7 @@ nav > ul > li > a:focus {
   right: 0;
   top: 2px;
   font-size: 20px;
+  padding-right: 0;
 }
 
 @keyframes color-change {
