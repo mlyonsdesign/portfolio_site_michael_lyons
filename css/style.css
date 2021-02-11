@@ -149,6 +149,22 @@ a:hover {
   border-left: 2px solid #939598;
 }
 
+.button.dl_ui {
+  display: inline;
+  background-color: #f26724;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 6px;
+  border-radius: 4px;
+  border-bottom: 2px solid #f26724;
+  border-top: 2px solid #f26724;
+  border-right: 2px solid #f26724;
+  border-left: 2px solid #f26724;
+  text-transform: none;
+  transition: 0.2s color;
+  transition: 0.2s background-color;
+}
+
 /* Layout styling */
 
 .container {
