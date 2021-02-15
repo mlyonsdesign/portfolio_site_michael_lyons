@@ -1,17 +1,28 @@
 <?php
 
-if($_POST["submit"]) {
-    $recipient="mlyonsdesign@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
+if (!empty($errors)) {
+    $allErrors = join('<br/>', $errors);
+    $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
+ }
 
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+if (!empty($_POST)) {
+   $name = $_POST['name'];
+   $email = $_POST['email'];
+   $message = $_POST['message'];
+  
+   if (empty($name)) {
+       $errors[] = 'Name is empty';
+   }
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+   if (empty($email)) {
+       $errors[] = 'Email is empty';
+   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+       $errors[] = 'Email is invalid';
+   }
 
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
+   if (empty($message)) {
+       $errors[] = 'Message is empty';
+   }
 }
 
 ?><!DOCTYPE html>
