@@ -1,10 +1,21 @@
 <?php
-if($_POST["message"]) {
-    mail("mlyonsdesign@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+
+if($_POST["submit"]) {
+    $recipient="mlyonsdesign@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
-?>
-<!DOCTYPE html>
-<html lang="en">
+
+?><!DOCTYPE html>
+
 <head>
     <script src="https://kit.fontawesome.com/246e25cd67.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -15,8 +26,16 @@ if($_POST["message"]) {
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<form method="post" action="contact.php">
-    <textarea name="message"></textarea>
-    <input type="submit">
+<body>
+
+<form method="POST" action="form.php" id="contact-form">
+<h2>Contact us</h2>
+<p><label>First Name:</label> <input name="name" type="text" /></p>
+<p><label>Email Address:</label> <input style="cursor: pointer;" name="email" type="text" /></p>
+<p><label>Message:</label>  <textarea name="message"></textarea> </p>
+
+<p><input type="submit" value="Send" /></p>
 </form>
+
+</body>
 </html>
