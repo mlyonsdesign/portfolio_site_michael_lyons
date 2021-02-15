@@ -1,32 +1,22 @@
 <?php
+if(!empty($_POST["send"])) {
+	$name = $_POST["userName"];
+	$email = $_POST["userEmail"];
+	$subject = $_POST["subject"];
+	$content = $_POST["content"];
 
-if (!empty($errors)) {
-    $allErrors = join('<br/>', $errors);
-    $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
- }
-
-if (!empty($_POST)) {
-   $name = $_POST['name'];
-   $email = $_POST['email'];
-   $message = $_POST['message'];
-  
-   if (empty($name)) {
-       $errors[] = 'Name is empty';
-   }
-
-   if (empty($email)) {
-       $errors[] = 'Email is empty';
-   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       $errors[] = 'Email is invalid';
-   }
-
-   if (empty($message)) {
-       $errors[] = 'Message is empty';
-   }
+	$toEmail = "mlyonsdesign@gmail.com";
+	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
+	if(mail($toEmail, $subject, $content, $mailHeaders)) {
+	    $message = "Your email has been sent successfully.";
+	    $type = "success";
+	}
 }
 
-?><!DOCTYPE html>
+?>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/246e25cd67.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -37,55 +27,94 @@ if (!empty($_POST)) {
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
+    <div class="form-container">
+        <form name="frmContact" id="" frmContact"" method="post"
+            action="" enctype="multipart/form-data"
+            onsubmit="return validateContactForm()">
 
-<form method="POST" action="form.php" id="contact-form">
-<h2>Contact us</h2>
-<p><label>First Name:</label> <input name="name" type="text" /></p>
-<p><label>Email Address:</label> <input style="cursor: pointer;" name="email" type="text" /></p>
-<p><label>Message:</label>  <textarea name="message"></textarea> </p>
+            <div class="input-row">
+                <label style="padding-top: 20px;">Name</label> <span
+                    id="userName-info" class="info"></span><br /> <input
+                    type="text" class="input-field" name="userName"
+                    id="userName" />
+            </div>
+            <div class="input-row">
+                <label>Email</label> <span id="userEmail-info"
+                    class="info"></span><br /> <input type="text"
+                    class="input-field" name="userEmail" id="userEmail" />
+            </div>
+            <div class="input-row">
+                <label>Subject</label> <span id="subject-info"
+                    class="info"></span><br /> <input type="text"
+                    class="input-field" name="subject" id="subject" />
+            </div>
+            <div class="input-row">
+                <label>Message</label> <span id="userMessage-info"
+                    class="info"></span><br />
+                <textarea name="content" id="content"
+                    class="input-field" cols="60" rows="6"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="send" class="btn-submit"
+                    value="Send" />
 
-<p><input type="submit" value="Send" /></p>
-</form>
+                <div id="statusMessage"> 
+                        <?php
+                        if (! empty($message)) {
+                            ?>
+                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                        <?php
+                        }
+                        ?>
+                    </div>
+            </div>
+        </form>
+    </div>
 
-<script>
-   const constraints = {
-       name: {
-           presence: { allowEmpty: false }
-       },
-       email: {
-           presence: { allowEmpty: false },
-           email: true
-       },
-       message: {
-           presence: { allowEmpty: false }
-       }
-   };
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        function validateContactForm() {
+            var valid = true;
 
-   const form = document.getElementById('contact-form');
+            $(".info").html("");
+            $(".input-field").css('border', '#e0dfdf 1px solid');
+            var userName = $("#userName").val();
+            var userEmail = $("#userEmail").val();
+            var subject = $("#subject").val();
+            var content = $("#content").val();
+            
+            if (userName == "") {
+                $("#userName-info").html("Required.");
+                $("#userName").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (userEmail == "") {
+                $("#userEmail-info").html("Required.");
+                $("#userEmail").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+            {
+                $("#userEmail-info").html("Invalid Email Address.");
+                $("#userEmail").css('border', '#e66262 1px solid');
+                valid = false;
+            }
 
-   form.addEventListener('submit', function (event) {
-     const formValues = {
-         name: form.elements.name.value,
-         email: form.elements.email.value,
-         message: form.elements.message.value
-     };
-
-     const errors = validate(formValues, constraints);
-
-     if (errors) {
-       event.preventDefault();
-       const errorMessage = Object
-           .values(errors)
-           .map(function (fieldValues) { return fieldValues.join(', ')})
-           .join("\n");
-
-       alert(errorMessage);
-     }
-   }, false);
+            if (subject == "") {
+                $("#subject-info").html("Required.");
+                $("#subject").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (content == "") {
+                $("#userMessage-info").html("Required.");
+                $("#content").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            return valid;
+        }
 </script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-
 </body>
 </html>
