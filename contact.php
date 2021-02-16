@@ -3,14 +3,22 @@ if(!empty($_POST["send"])) {
 	$name = $_POST["userName"];
 	$email = $_POST["userEmail"];
 	$subject = $_POST["subject"];
-	$content = $_POST["content"];
-
+    $content = $_POST["content"];
+    
 	$toEmail = "mlyonsdesign@gmail.com";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
 	if(mail($toEmail, $subject, $content, $mailHeaders)) {
-	    $message = "Your email has been sent successfully.";
+	    $message = "Your contact information is received successfully.";
 	    $type = "success";
 	}
+
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+    $mail->isSMTP();                                            // Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+    $mail->SMTPAuth   = false;                                   // Enable SMTP authentication
+    $mail->Username   = 'mlyonsdesign@gmail.com';                     // SMTP username
+    $mail->Password   = '3109woodland88';                               // SMTP password
+    $mail->Port       = 25;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 }
 
 ?>
