@@ -191,7 +191,6 @@ if(!empty($_POST["send"])) {
         <p>Copyright MICHAEL LYONS © 2021</p>
         </div>
     </div>
-    </div>
         </footer>
         <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
