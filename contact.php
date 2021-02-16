@@ -5,10 +5,10 @@ if(!empty($_POST["send"])) {
 	$subject = $_POST["subject"];
 	$content = $_POST["content"];
 
-	$toEmail = "admin@phppot_samples.com";
+	$toEmail = "mlyonsdesign@gmail.com";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
 	if(mail($toEmail, $subject, $content, $mailHeaders)) {
-	    $message = "Your contact information is received successfully.";
+	    $message = "Your email was sent successfully. Thank you.";
 	    $type = "success";
 	}
 }
@@ -77,28 +77,33 @@ if(!empty($_POST["send"])) {
             action="" enctype="multipart/form-data"
             onsubmit="return validateContactForm()">
 
-            <div class="input-row">
-                <label style="padding-top: 20px;">Name</label> <span
-                    id="userName-info" class="info"></span><br /> <input
+            <br /> <input
                     type="text" class="input-field" name="userName"
                     id="userName" />
+                    <div class="input-row">
+                <label style="padding-top: 20px;">Name</label> <span
+                    id="userName-info" class="info"></span>
             </div>
-            <div class="input-row">
-                <label>Email</label> <span id="userEmail-info"
-                    class="info"></span><br /> <input type="text"
+            <br /> <input type="text"
                     class="input-field" name="userEmail" id="userEmail" />
+                    <div class="input-row">
+                <label>Email</label> <span id="userEmail-info"
+                    class="info"></span>
             </div>
-            <div class="input-row">
-                <label>Subject</label> <span id="subject-info"
-                    class="info"></span><br /> <input type="text"
+            <br /> <input type="text"
                     class="input-field" name="subject" id="subject" />
+                    <div class="input-row">
+                <label>Subject</label> <span id="subject-info"
+                    class="info"></span>
             </div>
-            <div class="input-row">
-                <label>Message</label> <span id="userMessage-info"
-                    class="info"></span><br />
+            <br />
                 <textarea name="content" id="content"
                     class="input-field" cols="60" rows="6"></textarea>
+                    <div class="input-row">
+                <label>Message</label> <span id="userMessage-info"
+                    class="info"></span>
             </div>
+            <br />
             <div>
                 <input type="submit" name="send" class="btn-submit"
                     value="Send" />
