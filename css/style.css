@@ -168,7 +168,8 @@ a:hover {
 
 .containeremailform {
   padding: 0 15px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 .row {
