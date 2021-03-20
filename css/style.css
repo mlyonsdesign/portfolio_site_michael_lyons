@@ -11,7 +11,7 @@ Text Color (Black): #2A2A2A;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: "Nunito+Sans", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -68,9 +68,11 @@ a:hover {
   color: #939598;
   text-decoration: none;
 }
+
 a:active {
   color: #2a2a2a;
 }
+
 a:focus {
   color: #939598;
   text-decoration: none;
@@ -82,7 +84,7 @@ a:hover {
 
 .button {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #f26724;
   font-weight: 600;
   padding: 8px;
@@ -100,12 +102,12 @@ a:hover {
 
 .button:hover {
   background-color: #f26724;
-  color: #ffffff;
+  color: #fff;
 }
 
 .button:active {
   background-color: #939598;
-  color: #ffffff;
+  color: #fff;
   border-bottom: 2px solid #939598;
   border-top: 2px solid #939598;
   border-right: 2px solid #939598;
@@ -114,16 +116,17 @@ a:hover {
 
 .button:focus {
   background-color: #939598;
-  color: #ffffff;
+  color: #fff;
   border-bottom: 2px solid #939598;
   border-top: 2px solid #939598;
   border-right: 2px solid #939598;
   border-left: 2px solid #939598;
 }
+
 .button.contact {
   display: inline-block;
   background-color: #f26724;
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
   padding: 6px;
   margin-right: 0;
@@ -138,13 +141,13 @@ a:hover {
 }
 
 .button.contact:hover {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #f26724;
 }
 
 .button.contact:active {
   background-color: #939598;
-  color: #ffffff;
+  color: #fff;
   border-bottom: 2px solid #939598;
   border-top: 2px solid #939598;
   border-right: 2px solid #939598;
@@ -153,7 +156,7 @@ a:hover {
 
 .button.contact:focus {
   background-color: #939598;
-  color: #ffffff;
+  color: #fff;
   border-bottom: 2px solid #939598;
   border-top: 2px solid #939598;
   border-right: 2px solid #939598;
@@ -194,7 +197,7 @@ a:hover {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 10px 0;
 }
 
@@ -212,7 +215,7 @@ nav > ul > li > a {
   padding: 0 12px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #cccccc;
+  color: #ccc;
 }
 
 nav > ul > li > a:hover {
@@ -258,7 +261,7 @@ nav > ul > li > a:focus {
 }
 
 #hero {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -439,7 +442,4 @@ nav > ul > li > a:focus {
   h4 {
     font-size: 28px;
   }
-}
-
-@media only screen and (min-width: 1440px) {
 }
