@@ -277,9 +277,11 @@ nav > ul > li > a:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -293,6 +295,7 @@ nav > ul > li > a:focus {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -306,6 +309,7 @@ nav > ul > li > a:focus {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
