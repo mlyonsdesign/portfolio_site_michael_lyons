@@ -169,6 +169,10 @@ a:hover {
   padding: 0 15px;
 }
 
+.container_about {
+  max-width: 400px;
+}
+
 .containeremailform {
   padding: 0 15px;
   margin-bottom: 32px;
@@ -325,6 +329,11 @@ nav > ul > li > a:focus {
     padding: 20px 0 13px;
   }
 
+  .container_about {
+    max-width: 400px;
+    margin-left: 10px;
+  }
+
   .logo {
     float: left;
   }
@@ -412,6 +421,8 @@ nav > ul > li > a:focus {
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
     width: 58.33%;
+    float: right;
+    padding-left: 0;
   }
 
   #aboutskillstools .col-md-6 {
@@ -427,6 +438,13 @@ nav > ul > li > a:focus {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .container_about {
+    max-width: 400px;
+    margin-left: 10px;
+    padding-right: 15px;
+    float: left;
   }
 
   .containeremailform {
