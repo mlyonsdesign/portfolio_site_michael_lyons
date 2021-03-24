@@ -34,7 +34,7 @@ h5 {
 h1 {
   font-size: 32px;
   font-weight: 400;
-  color: #303131;
+  color: #303030;
 }
 
 h2 {
@@ -55,10 +55,9 @@ h4 {
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
-  color: #525252;
-  text-transform: uppercase;
+  color: #303030;
   text-align: left;
 }
 
