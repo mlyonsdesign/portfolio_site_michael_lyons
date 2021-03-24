@@ -26,7 +26,8 @@ img {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   line-height: 1.4;
 }
 
@@ -51,6 +52,13 @@ h4 {
   font-size: 14px;
   font-weight: 300;
   color: #e4560f;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 li {
@@ -331,7 +339,8 @@ nav > ul > li > a:focus {
 
   .container_about {
     max-width: 400px;
-    margin-left: 10px;
+    float: left;
+    margin-left: 0;
   }
 
   .logo {
@@ -429,7 +438,7 @@ nav > ul > li > a:focus {
   }
 
   .col-lg-7_about {
-    width: 58.33%;
+    width: 100%;
     float: right;
     padding-left: 0;
   }
@@ -449,8 +458,8 @@ nav > ul > li > a:focus {
   }
 
   .col-lg-5_about {
-    width: 41.66%;
-    padding-left: 10px;
+    width: 88%;
+    padding-left: 0;
   }
 
   .container {
