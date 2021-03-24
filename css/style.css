@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Orange): #e4560f;
-Secondary Color (Grey): #939598;
+Secondary Color (Grey): #7c7d80;
 Secondary Color (Light Grey): #CCCCCC;
 Text Color (Black): #2A2A2A;
 */
@@ -16,7 +16,7 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #939598;
+  color: #7c7d80;
 }
 
 img {
@@ -74,7 +74,7 @@ a {
 }
 
 a:hover {
-  color: #939598;
+  color: #7c7d80;
   text-decoration: none;
 }
 
@@ -83,7 +83,7 @@ a:active {
 }
 
 a:focus {
-  color: #939598;
+  color: #7c7d80;
   text-decoration: none;
 }
 
@@ -115,21 +115,21 @@ a:hover {
 }
 
 .button:active {
-  background-color: #939598;
+  background-color: #7c7d80;
   color: #fff;
-  border-bottom: 2px solid #939598;
-  border-top: 2px solid #939598;
-  border-right: 2px solid #939598;
-  border-left: 2px solid #939598;
+  border-bottom: 2px solid #7c7d80;
+  border-top: 2px solid #7c7d80;
+  border-right: 2px solid #7c7d80;
+  border-left: 2px solid #7c7d80;
 }
 
 .button:focus {
-  background-color: #939598;
+  background-color: #7c7d80;
   color: #fff;
-  border-bottom: 2px solid #939598;
-  border-top: 2px solid #939598;
-  border-right: 2px solid #939598;
-  border-left: 2px solid #939598;
+  border-bottom: 2px solid #7c7d80;
+  border-top: 2px solid #7c7d80;
+  border-right: 2px solid #7c7d80;
+  border-left: 2px solid #7c7d80;
 }
 
 .button.contact {
@@ -155,21 +155,21 @@ a:hover {
 }
 
 .button.contact:active {
-  background-color: #939598;
+  background-color: #7c7d80;
   color: #fff;
-  border-bottom: 2px solid #939598;
-  border-top: 2px solid #939598;
-  border-right: 2px solid #939598;
-  border-left: 2px solid #939598;
+  border-bottom: 2px solid #7c7d80;
+  border-top: 2px solid #7c7d80;
+  border-right: 2px solid #7c7d80;
+  border-left: 2px solid #7c7d80;
 }
 
 .button.contact:focus {
-  background-color: #939598;
+  background-color: #7c7d80;
   color: #fff;
-  border-bottom: 2px solid #939598;
-  border-top: 2px solid #939598;
-  border-right: 2px solid #939598;
-  border-left: 2px solid #939598;
+  border-bottom: 2px solid #7c7d80;
+  border-top: 2px solid #7c7d80;
+  border-right: 2px solid #7c7d80;
+  border-left: 2px solid #7c7d80;
 }
 
 /* Layout styling */
@@ -194,7 +194,7 @@ a:hover {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #939598;
+  border-bottom: 1px solid #7c7d80;
 }
 
 #hero h1 {
@@ -228,7 +228,7 @@ nav > ul > li > a {
   padding: 0 12px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #ccc;
+  color: #7c7d80;
 }
 
 nav > ul > li > a:hover {
