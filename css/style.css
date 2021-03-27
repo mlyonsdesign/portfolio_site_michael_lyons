@@ -35,9 +35,10 @@ h5 {
 }
 
 h1 {
-  font-size: 32px;
-  font-weight: 400;
-  color: #303030;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #e4560f;
 }
 
 h2 {
@@ -199,10 +200,6 @@ a:hover {
   border-bottom: 1px solid #7c7d80;
 }
 
-#hero h1 {
-  text-align: center;
-}
-
 #hero h4 {
   text-align: center;
 }
@@ -282,12 +279,6 @@ nav > ul > li > a:focus {
   width: 100%;
 }
 
-#aboutme h1 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-}
-
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -320,7 +311,7 @@ nav > ul > li > a:focus {
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   h2 {
@@ -437,7 +428,7 @@ nav > ul > li > a:focus {
   }
 
   h1 {
-    font-size: 64px;
+    font-size: 44px;
   }
 
   #aboutmike h2 {
