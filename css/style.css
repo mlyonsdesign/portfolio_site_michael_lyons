@@ -75,7 +75,19 @@ h5 {
   color: #4e7ce4;
 }
 
+#project_vibez h1 {
+  color: #e64ebe;
+}
+
 #project_watchden h1.h1banner {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#project_vibez h1.h1banner {
   color: #fff;
   text-align: center;
   display: flex;
@@ -218,6 +230,10 @@ a:hover {
   background-color: #4e7ce4;
   height: 108px;
   padding-left: 24px;
+}
+
+#project_vibez .h1banner {
+  background-color: #e64ebe;
 }
 
 .row {
