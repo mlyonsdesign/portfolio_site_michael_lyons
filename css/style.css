@@ -203,6 +203,11 @@ a:hover {
   max-width: 600px;
 }
 
+.project_panel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .containeremailform {
   padding: 0 15px;
   margin-bottom: 32px;
