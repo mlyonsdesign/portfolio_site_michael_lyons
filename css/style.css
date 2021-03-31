@@ -75,6 +75,14 @@ h5 {
   color: #4e7ce4;
 }
 
+#project_watchden h1.h1banner {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 li {
   font-size: 18px;
   font-weight: 400;
@@ -199,6 +207,12 @@ a:hover {
   padding: 0 15px;
   margin-bottom: 32px;
   margin-top: 32px;
+}
+
+.h1banner {
+  background-color: #4e7ce4;
+  height: 108px;
+  padding-left: 24px;
 }
 
 .row {
