@@ -84,6 +84,11 @@ h5 {
   font-family: "Itim";
 }
 
+#project_meowchow h4 {
+  font-family: "Itim";
+  text-transform: uppercase;
+}
+
 #project_watchden h1.h1banner {
   color: #fff;
   text-align: center;
