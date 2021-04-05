@@ -81,12 +81,14 @@ h5 {
 
 #project_meowchow h1 {
   color: #8440e0;
+  font-size: 32px;
   font-family: "Itim";
 }
 
 #project_meowchow h4 {
   font-family: "Itim";
   text-transform: uppercase;
+  font-size: 28px;
 }
 
 #project_watchden h1.h1banner {
@@ -374,11 +376,19 @@ nav > ul > li > a:focus {
   }
 
   h4 {
-    font-size: 21px;
+    font-size: 26px;
   }
 
   h5 {
     font-size: 32px;
+  }
+
+  #project_meowchow h1 {
+    font-size: 40px;
+  }
+
+  #project_meowchow h4 {
+    font-size: 30px;
   }
 
   span {
@@ -506,5 +516,13 @@ nav > ul > li > a:focus {
 
   h5 {
     font-size: 36px;
+  }
+
+  #project_meowchow h1 {
+    font-size: 48px;
+  }
+
+  #project_meowchow h4 {
+    font-size: 32px;
   }
 }
