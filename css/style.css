@@ -240,8 +240,8 @@ a:hover {
 
 .h1banner {
   background-color: #4e7ce4;
-  height: 108px;
-  padding-left: 24px;
+  height: 64px;
+  padding-left: 12px;
 }
 
 #project_vibez .h1banner {
@@ -347,6 +347,11 @@ nav > ul > li > a:focus {
     float: left;
     margin-right: 24px;
     margin-left: 0;
+  }
+
+  .h1banner {
+    height: 84px;
+    padding-left: 18px;
   }
 
   .logo {
@@ -494,6 +499,11 @@ nav > ul > li > a:focus {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .h1banner {
+    height: 108px;
+    padding-left: 24px;
   }
 
   .containeremailform {
