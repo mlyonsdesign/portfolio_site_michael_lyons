@@ -83,6 +83,10 @@ h5 {
   color: #fe7f00;
 }
 
+#project_ketokitchen h1 {
+  color: #298cf2;
+}
+
 #project_meowchow h1 {
   color: #8440e0;
   font-size: 32px;
@@ -222,10 +226,6 @@ a:hover {
 }
 
 /* Layout styling */
-
-.container {
-  padding: 0 15px;
-}
 
 .container_about {
   max-width: 600px;
