@@ -236,6 +236,11 @@ a:hover {
   margin-bottom: 24px;
 }
 
+.project_banner {
+  margin-top: 24px;
+  margin-bottom: -8px;
+}
+
 .containeremailform {
   padding: 0 15px;
   margin-bottom: 32px;
