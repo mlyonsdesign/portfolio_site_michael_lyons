@@ -227,6 +227,10 @@ a:hover {
 
 /* Layout styling */
 
+.container {
+  padding: 0 15px;
+}
+
 .container_about {
   max-width: 600px;
 }
